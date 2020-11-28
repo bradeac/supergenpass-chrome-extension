@@ -1,0 +1,17 @@
+{
+    "short_name": "SGP generator",
+    "name": "SuperGenPass generator",
+    "description": "SuperGenPass Chrome Extension",
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+     "128": "icon.png"
+    },
+    "permissions": ["activeTab"],
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "browser_action": {
+      "default_popup": "index.html",
+      "default_title": "SGP generator"
+    }
+  }

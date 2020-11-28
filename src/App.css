@@ -1,0 +1,42 @@
+.app {
+    height: 200px;
+    width: 300px;
+
+    padding: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #282c34;
+    color: white;
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 2rem;
+}
+
+.optionsContainer {
+    margin-bottom: 2rem;
+}
+
+.container {
+    margin-bottom: .5rem;
+}
+
+.masterPasswordInput {
+    width: 5rem;
+}
+
+.passwordLengthInput {
+    width: 3rem;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
