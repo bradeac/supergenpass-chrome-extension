@@ -16,7 +16,24 @@ Besides this, the extension doesn't make any network calls and doesn't store any
 
 For the hashing algorithm, I used the [official Javascript implementation of SuperGenPass](https://github.com/chriszarate/supergenpass-lib) installed as a npm module.
 
-## Manually installing the extension
+## Behaviour and particularities
+
+The extension keeps the default behaviour of SuperGenPass:
+- subdomains are being stripped from the URL for which the password will be generated
+- 10 hash rounds
+- `md5` as the hash function (other options might get included for the next versions of the extension)
+- no `salt` is being added to the master password (this could be added in next versions of the extension)
+
+Howerver, I chose to set a default password length of `16`, instead of the default value of `10`. I feel that password requirements are getting stricter and a length of `10` might not be universally accepted anymore.  
+Going with a length of `16` everywhere is better than having to remember different lengths of passwords for particular websites.
+
+## Installation
+
+Prerequisites:
+- [npm](https://nodejs.org/en/download/)
+- Chrome based web browser
+
+Installation steps:
 
 1. clone this repository
 2. open a terminal, navigate to where you've cloned the repo and run `npm i`
