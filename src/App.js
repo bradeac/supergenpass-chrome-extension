@@ -14,7 +14,7 @@ function App() {
     useEffect(() => {
         chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
             let url = new URL(tabs[0].url)
-            setDomain(url.origin)
+            setDomain(url.hostname)
         })
 
         return (() => {
@@ -50,7 +50,6 @@ function App() {
 
     return (
         <section className="app">
-            <span className="text">You will generate a password for: {domain}</span>
             <section className="optionsContainer">
                 <div className="container">
                     <span>Master password: </span>
